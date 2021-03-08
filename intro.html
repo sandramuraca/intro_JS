@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a JS</title>
+</head>
+    <body>
+        <h1>hola mundo!</h1>
+        <script>
+            /*comentarios en bloque*/
+            console.log("Chau Ada!!"); //comentarios en linea
+            console.log("Chau Ada!!");
+            console.log("tercer console log");
+
+            /*tipos de console*/ 
+            /*todo lo que es console no debe mostrarse en produccion por que puede vulnerar el sistema*/
+            console.log("nombre"); //console
+            console.error("nombre"); //error
+            console.warn("nombre"); //advertencia
+            console.info("nombre"); //informacion
+
+            /*metodos*/
+            alert("esto es un alerta")
+
+            prompt("queres viajar?") //metodo que abre un cuadro de dialogo
+            
+            console.log(prompt("te gusta comer?"))//la respuesta la podes ver en la consola
+
+            var edad = prompt("que edad tenes?");//este metodo hace la pregunta y la variable se la enlaza con un console.log para que guarde la respuesta
+            console.log(edad);
+
+            /*variables para almacenas datos*/
+            var nombre_1 = "Julia"; //snake_case
+            var nombreCompleto = "pablo"; //camelCase
+            var NOMBRE = "Carlos"; /// NOOOO todo en MAY (constante)
+            var Nombre = "juan"; /// NOOOOOOOO no puede iniciar con May (clase)
+            var nombre = "pedro"; /// NOOOOO no puede iniciar con n°
+            
+            var nacionalidad = prompt("cual es tu nacionalidad¿");
+            console.log("tu nacionalidad es" + nacionalidad)
+
+        </script>
+    </body>
+</html>

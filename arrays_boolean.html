@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        //ARRAIS
+
+        const person1 = {
+            name: `Sandra`,
+            surname: `Muraca`,
+            age: 42 
+        };
+
+        const person2 = {
+            name: `Victoria`,
+            surname: `Capella`,
+            age: 13 
+        };
+
+        const person3 = {
+            name: `Cristian`,
+            surname: `Rodriguez`,
+            age: 40
+        };
+
+        const family = [person1, person2, person3]
+
+        console.log (family); // aca en el console muestra los 3 elementos con su nro indice
+
+        console.log (family[0]); // aca llamamos al elemento indicado con el nro entre corchetes segun el indice
+
+        family.push({
+            name: `gata`,
+            surname: `flora`,
+            age: 7
+        }) /// de esta manera se agregan elementos dinamicos al array
+
+        console.log (family) /// en este console.log van a estar los 3 primeros + gata flora
+        
+        //BOOLEANOS
+
+        const isRaining = false;
+        let age = 19;
+        const olderThan18 = age >= 18; //es mayor o igual a 18
+        console.log(olderThan18); //aqui es resultado en el console es true
+        
+
+    
+    </script>
+</body>
+</html>

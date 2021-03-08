@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js - courseit</title>
+</head>
+<body>
+    <script>
+       
+        const nombre= 'Sandra';
+        const apellido= 'Muraca';
+        const pasatiempo= 'leer';
+        let edad= 42;
+
+
+        console.log('Edad anterior: ' + edad)
+
+        edad = edad + 1 ///asi se modifica la variable definida 43 = 42 + 1
+
+        console.log("Mi nombre es " + nombre + " mi edad es " + edad) 
+
+        const sentence = 'Sandra "Sandrita" es una programadora' // en este caso la comilla doble sirve para destacar
+
+        console.log ("hola " + nombre);
+        console.log (`hola ${nombre}`);
+
+        console.log ("hola, mi nombre es " + nombre + " " + apellido + " mi edad es " + edad + " y me gusta " + pasatiempo)
+
+        console.log(
+            `hola, mi nombre es ${nombre} ${apellido} mi edad es ${edad} años y me gusta ${pasatiempo}`
+        ); //// los dos stings son iguales es segundo esta escrito como template strings
+
+        const saltoDeLinea = `
+            primera linea
+            segunda linea
+            tercera linea
+            `;
+            
+        console.log (saltoDeLinea) /// para lograr los saltos de linea se hacen con las comillas invertidas `` las otras comillas ponen todo seguido
+
+        //numeros//
+        const kids= 3;
+        const candies= 10;
+        console.log(Math.floor (candies / kids)); // se usa el metodo .floor para que redondee hacia abajo por que no pueden ser mas de 3 caramelos por niño
+
+        const candiesPerKid= Math.floor(candies / kids);
+        const candiesForParent = candies - candiesPerKid * kids;
+        //const candiesForParent = candies % kids;  esto es lo mismo que lo anterior el % es una operacion por modulo y calcula la diferencia de una division
+        
+        console.log(`cada chico recibe ${kids}`);
+        console.log(`cada padre recibe, el caramelo sobrante: ${candiesForParent}`);
+
+        //operaciones matematicas básicas//
+        // / --> dividir
+        // * --> multiplicar
+        // + --> sumar
+        // - --> restar
+       
+        //metodos//
+        //Math.round();redondea de 0.5 para arriba o para abajo segun corresponda
+        //Math.floor();redondea siempre para abajo asi sea 3.1 o 3.99 siempre el rsultado va a ser 3
+        //Math.ceil(); igual que floor pero para arriba
+        //Math.random(); aleatorio entre 0 y 1
+
+        const a = 10
+        const b = 20
+        console.log (a * b); //multiplicacion
+        console.log (a / b); //división
+        console.log (a - b); //resta
+        console.log (a + b); // suma
+
+
+       
+
+       
+
+    </script>
+</body>
+</html> 
